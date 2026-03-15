@@ -1,0 +1,54 @@
+/* WC Order Export/Import — Admin Styles */
+
+.wcei-wrap h1 {
+    margin-bottom: 0;
+}
+
+.wcei-wrap .nav-tab-wrapper {
+    margin-bottom: 0;
+}
+
+.wcei-tab-content {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-top: none;
+    padding: 20px 24px 24px;
+}
+
+.wcei-section h2 {
+    margin-top: 0;
+    padding-top: 8px;
+    font-size: 1.2em;
+    color: #1d2327;
+}
+
+.wcei-form-table th {
+    width: 160px;
+    padding: 12px 10px 12px 0;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.wcei-form-table td {
+    padding: 10px 0;
+    vertical-align: middle;
+}
+
+.wcei-datepicker {
+    width: 140px;
+}
+
+.wcei-btn-export,
+.wcei-btn-import {
+    min-width: 120px;
+}
+
+#wcei_csv {
+    vertical-align: middle;
+}
+
+.wcei-form-table .description {
+    margin-top: 4px;
+    color: #646970;
+    font-style: italic;
+}
