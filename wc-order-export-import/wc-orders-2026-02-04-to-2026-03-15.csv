@@ -1,0 +1,32 @@
+﻿order_number,order_date,billing_first_name,billing_last_name,billing_email,products,total,payment_status,shipping_address_1,shipping_address_2,shipping_city,shipping_state,shipping_postcode,shipping_country
+15481,"2026-02-09 10:45:13",carlo,valentijn,info@debunderhoutambacht.nl,"Raamdorpel 155 40 / 75 mm x 1",121.70,completed,Struikhei,,SPRUNDEL,,"4714 VB",NL
+15482,"2026-02-10 09:30:12",Evert,Vanfraechem,evert.vanfraechem@brankaer.be,"Raamdorpel 250 x 50 / 85 mm x 2",217.92,completed,"Joseph Kumpsstraat 43a",,Hoeilaart,,1560,BE
+15483,"2026-02-10 12:31:36",Enrico,Hekman,info@hekmanbouw.nl,"Brievenbus paneel met huisnummer 300 x 425 mm - Grijs x 1 | Vlak met sierrand 68 x 68 x 9 cm - Grijs x 2",450.00,completed,"5A De Winckelmaat",,Gramsbergen,,"7783 DG",NL
+15484,"2026-02-10 18:22:17",Bouwbedrijf,"van der Linde",corvdlinde@live.nl,"Raamdorpel 140 x 30 / 60 mm x 12",657.91,completed,"elzenweg 11",,Oldebroek,,"8096 RV",NL
+15485,"2026-02-11 12:10:26",Bé,Duinkerken,duinkerken.b@home.nl,"Schroefhuls met flens m16 x 1",19.00,completed,"Rigel 12",,HOOGEVEEN,,"7904 KW",NL
+15486,"2026-02-11 12:16:48",Bé,Duinkerken,duinkerken.b@home.nl,"Schroefhuls met flens m16 x 3",29.00,completed,"Rigel 12",,HOOGEVEEN,,"7904 KW",NL
+15487,"2026-02-11 14:07:01",Michael,Fidan,info@fmvastgoedontwikkeling.nl,"Raamdorpel 155 40 / 75 mm x 4 | Raamdorpel 155 40 / 75 mm x 10 | Raamdorpel 155 40 / 75 mm x 2",883.83,completed,"Het Heydenrijck 22",,Groenlo,,"7141 EN",NL
+15489,"2026-02-12 17:39:35",Sandra,Souwer,info@kunststofbouwgieten.nl,"Raamdorpel 100 x 40 / 65 mm x 2 | Raamdorpel 100 x 40 / 65 mm x 5 | Raamdorpel 100 x 40 / 65 mm x 1 | Raamdorpel 100 x 40 / 65 mm x 4 | Raamdorpel 100 x 40 / 65 mm x 2",827.26,completed,"bloemakkers 7",,Gieten,,"9461 GX",NL
+15492,"2026-02-16 18:25:45",Peter,"van der Leeden",info@kunststofbouwgieten.nl,"Raamdorpel 100 x 40 / 65 mm x 6",334.02,completed,"Bloemakkers 7",,Gieten,,"9461 GX",NL
+15493,"2026-02-17 10:43:16",marvinn,Kraft,info@nieuwekozijnen.eu,"Raamdorpel 155 40 / 75 mm x 1 | Raamdorpel 115 x 60 / 90 mm x 1 | Raamdorpel 115 x 60 / 90 mm x 1",205.63,completed,"phileas foggstraat, 28",,Emmen,,"7825 AK",NL
+15494,"2026-02-17 17:49:01",Gert,Elling,info@bouwservicegertelling.nl,"Raamdorpel 160 x 40 / 70 mm x 1 | Raamdorpel 160 x 40 / 70 mm x 1",120.58,completed,"E. van Drielststraat 63",,Emmen,,"7815 LV",NL
+15495,"2026-02-19 15:28:44",Frank,"van Gerven",fvangerven@outlook.com,"Paalmuts 4 zijdig aflopend 35 x 35 cm 3.5/7 - Grijs x 12 | Muurafdekker 15 cm breed  3.5 tot 7 cm hoog - Grijs x 30",1020.00,cancelled,,,Venlo,,"5922 TC",NL
+15496,"2026-02-19 15:35:49",Frank,"van Gerven",fvangerven@outlook.com,"Paalmuts 4 zijdig aflopend 35 x 35 cm 3.5/7 - Grijs x 12 | Muurafdekker 15 cm breed  3.5 tot 7 cm hoog - Grijs x 30",1166.54,processing,"Geijsterseweg 9",,Wanssum,,"5861 BK",NL
+15497,"2026-02-19 19:06:48",Carlo,"van Heijningen",info@trust-bouw.nl,"Muurafdekker 40 cm breed 5 tot 10 cm hoog - Grijs x 10",799.99,processing,"Ewoudslaan 3",,Honselersdijk,,"2675 KT",NL
+15499,"2026-02-22 11:14:06",bertjan,olthof,bjolthof@hotmail.com,"Raamdorpel 140 x 40 / 75 mm x 2 | Raamdorpel 140 x 40 / 75 mm x 4 | Raamdorpel 140 x 40 / 75 mm x 6 | Raamdorpel 140 x 40 / 75 mm x 4 | Raamdorpel 140 x 40 / 75 mm x 1 | Raamdorpel 140 x 40 / 75 mm x 2 | Raamdorpel 140 x 40 / 75 mm x 3",1629.50,processing,"schilligepad 32",,Boerakker,,"9761 TJ",NL
+15500,"2026-02-23 08:25:51",j,"de ree",info@kozijnnoord.nl,"Raamdorpel 115 x 60 / 90 mm x 2 | dilatatiekit 310 ml grijs / antraciet - Grijs x 1 | Raamdorpel 115 x 60 / 90 mm x 2 | Proefdorpel bestellen x 1",330.62,processing,"mollier 9",,"st nicolaasga",,"8521 MD",NL
+15501,"2026-02-23 19:48:41",Geert,Ruijs,ruijs@ziggo.nl,"Impregneermiddel x 1 | Paalmuts vlak met sierrand op maat gemaakt x 1",469.22,processing,"Marienbergweg 21",,Oosterbeek,,"6862 ZL",NL
+15502,"2026-02-24 07:41:42",bas,veldman,bastiaanveldman@hotmail.com,"Proefdorpel bestellen x 1 | Proefdorpel bestellen x 1",14.00,processing,"sportstraat 29",,kolhorn,,"1767 CD",NL
+15503,"2026-02-25 13:32:17",René,Verbeek,secretaris@vveprincehaven.nl,"Hoeksteen 20 x 20 x 10 cm - Grijs x 2",144.00,completed,"Prins Hendrikkade 131",,"KATWIJK ZH",,"2225 JT",NL
+15504,"2026-02-25 13:43:42",Patrick,Bex,bepatek@skynet.be,"Model 1 - 45 x 45 cm - Grijs x 4 | Muurafdekker 25 cm breed 5 tot 10 cm hoog - Grijs x 5",509.92,processing,"Vrijheidsstraat 8",,Neerpelt,,3910,BE
+15505,"2026-02-27 09:39:46",Jeffrey,"Van Der Borst",jtajborst@ziggo.nl,"Spekband 155 80 85 - Grijs x 9",459.00,processing,"Roosendaalseweg 37b",,Etten-Leur,,"4876 AA",NL
+15507,"2026-03-02 16:55:17",Niels,Mensink,Niels1mensink@live.nl,"Vlak met sierrand 68 x 68 x 9 cm - Grijs x 2",270.00,processing,"Slochterdijk 50",,Froombosch,,"9619 TC",NL
+15508,"2026-03-02 18:54:32",Mark,Fielt,mfielt@me.com,"Proefdorpel bestellen x 1 | Proefdorpel bestellen x 1 | Proefdorpel bestellen x 1 | Proefdorpel bestellen x 1",14.00,completed,"Rhienderinklaan 7",,Warnsveld,,"7231 DA",NL
+15509,"2026-03-02 21:13:00",Albert,"Van veldhuizen",albert_vanveldhuizen@hotmail.com,"Raamdorpel 160 x 40 / 70 mm x 2 | Raamdorpel 160 x 40 / 80 mm x 2",334.54,processing,Molecaten,,Barneveld,,"3772 LN",NL
+15510,"2026-03-03 16:22:29",bulent,baki,bulent@oldenzaal-classics.nl,"Paalmuts vlak 75 x 75 cm - Antraciet x 1",258.00,processing,29,,oldenzaal,,"7575 AA",NL
+15511,"2026-03-04 09:11:40",Wanda,Besselink,info@busschersbouw.nl,"Paalmuts 4 zijdig aflopend 35 x 35 cm 3.5/7 - Grijs x 11",330.00,cancelled,"Asser Esch 8, 7141 GM Groenlo",,Groenlo,,"7141 GM",NL
+15513,"2026-03-05 09:06:57",Wanda,Besselink,info@busschersbouw.nl,"Paalmuts 4 zijdig aflopend 35 x 35 cm 3.5/7 - Grijs x 11",409.99,processing,"Floresstraat 1A",,Hengelo,,"7556 TB",NL
+15514,"2026-03-08 13:01:46",Roelof,Woudman,r.woudman7@gmail.com,"Model 1 - 75 x 75 cm - Antraciet x 2",461.99,processing,"Carneool 39",,Drachten,,"9207 GE",NL
+15516,"2026-03-10 21:15:33",Corne,Kieft,info@kiefttechniek.nl,"Spekband 150 50 60 - Grijs x 7",392.00,processing,"Broeksteeg 5",,Barneveld,,"6741 JT",NL
+15517,"2026-03-11 15:16:22",Arjan,Kuyper,Kuyperarjan@gmail.com,"Raamdorpel 160 x 50 / 100 mm x 1 | Raamdorpel 160 x 50 / 100 mm x 2 | Raamdorpel 160 x 50 / 100 mm x 2 | dilatatiekit 310 ml grijs / antraciet - Grijs x 2 | Impregneermiddel x 1",369.79,processing,"Oosterveldsestraat 116",,Emmen,,"7826 HA",NL
+15518,"2026-03-13 13:57:24",Derk,Burema,j.d.burema@gasunie.nl,"Raamdorpel 115 x 60 / 90 mm x 1 | Raamdorpel 115 x 60 / 90 mm x 1",132.91,processing,Lansinkweg,,Hengelo,,"7553 AJ",NL
