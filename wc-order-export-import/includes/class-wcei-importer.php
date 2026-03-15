@@ -188,7 +188,7 @@ class WCEI_Importer {
 			foreach ( $order->get_items() as $item_id => $item ) {
 				$order->remove_item( $item_id );
 			}
-			self::populate_order( $order, $row );
+			self::populate_order( $order, $row, $order_number );
 			$order->save();
 			return 'updated';
 		}
@@ -206,7 +206,7 @@ class WCEI_Importer {
 			);
 		}
 
-		self::populate_order( $order, $row );
+		self::populate_order( $order, $row, $order_number );
 		$order->save();
 
 		return 'imported';
@@ -215,10 +215,11 @@ class WCEI_Importer {
 	/**
 	 * Populate (or repopulate) a WC_Order with data from a CSV row.
 	 *
-	 * @param WC_Order $order The order to populate.
-	 * @param array    $row   Sanitized row data.
+	 * @param WC_Order $order        The order to populate.
+	 * @param array    $row          Sanitized row data.
+	 * @param int      $order_number Source order number from the CSV (stored as meta for duplicate detection).
 	 */
-	private static function populate_order( WC_Order $order, array $row ) {
+	private static function populate_order( WC_Order $order, array $row, $order_number = 0 ) {
 		// ── Dates ──────────────────────────────────────────────────────────
 		if ( ! empty( $row['order_date'] ) ) {
 			$timestamp = strtotime( $row['order_date'] );
@@ -251,6 +252,13 @@ class WCEI_Importer {
 		// Override the calculated total with the CSV value if present.
 		if ( '' !== $row['total'] && is_numeric( $row['total'] ) ) {
 			$order->set_total( (float) $row['total'] );
+		}
+
+		// Store the source order number so re-imports can reliably detect duplicates
+		// without doing a raw ID lookup (which would collide with unrelated orders
+		// that happen to share the same numeric ID on the target site).
+		if ( $order_number > 0 ) {
+			$order->update_meta_data( '_wcei_source_order_number', (string) $order_number );
 		}
 
 		// Sanitize and set order status; WooCommerce strips the 'wc-' prefix internally.
@@ -321,11 +329,14 @@ class WCEI_Importer {
 	}
 
 	/**
-	 * Find an existing WooCommerce order by order number.
+	 * Find an order that was previously imported by this plugin.
 	 *
-	 * Supports both HPOS and legacy post-based storage.
+	 * Only matches orders that carry the '_wcei_source_order_number' meta set
+	 * at import time. This prevents false-positive duplicate detection against
+	 * pre-existing orders on the target site that happen to share the same
+	 * numeric ID as an order from the source (exported) site.
 	 *
-	 * @param  int          $order_number The order number (usually matches the order ID).
+	 * @param  int          $order_number The source order number from the CSV.
 	 * @return WC_Order|false
 	 */
 	private static function find_order( $order_number ) {
@@ -333,26 +344,14 @@ class WCEI_Importer {
 			return false;
 		}
 
-		// Direct lookup by ID (works for most stores where order_number = order_id).
-		$order = wc_get_order( $order_number );
-		if ( $order instanceof WC_Order ) {
-			return $order;
-		}
-
-		// Fallback: search by _order_number meta (used by some plugins like
-		// WooCommerce Sequential Order Numbers).
 		$orders = wc_get_orders( array(
-			'meta_key'   => '_order_number',
+			'meta_key'   => '_wcei_source_order_number',
 			'meta_value' => (string) $order_number,
 			'limit'      => 1,
 			'return'     => 'objects',
 		) );
 
-		if ( ! empty( $orders ) ) {
-			return reset( $orders );
-		}
-
-		return false;
+		return ! empty( $orders ) ? reset( $orders ) : false;
 	}
 
 	/**
