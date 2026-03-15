@@ -59,6 +59,13 @@ class WCEI_Importer {
 			return new WP_Error( 'empty_file', __( 'The CSV file appears to be empty.', 'wc-order-export-import' ) );
 		}
 
+		// Strip the UTF-8 BOM (\xEF\xBB\xBF) that the exporter writes for Excel
+		// compatibility. PHP's fgetcsv() does not strip it automatically, so it
+		// would be prepended to the first header cell and break the comparison.
+		if ( isset( $raw_headers[0] ) ) {
+			$raw_headers[0] = ltrim( $raw_headers[0], "\xEF\xBB\xBF" );
+		}
+
 		$headers = array_map( 'strtolower', array_map( 'trim', $raw_headers ) );
 
 		if ( $headers !== self::EXPECTED_HEADERS ) {
